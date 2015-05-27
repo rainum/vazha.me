@@ -15,6 +15,4 @@ group :rails_assets do
   gem 'rails-assets-jquery'
 end
 
-# GitHub pages support http://jekyllrb.com/docs/github-pages/
-
-gem 'github-pages'
+gem 'jgd'
