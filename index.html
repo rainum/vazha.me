@@ -19,7 +19,8 @@
         href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,400">
   {% stylesheet styles %}
   <link rel="canonical" href="{{ site.url }}">
-  <script>var _gaq = [['_setAccount', 'UA-7589447-3'], ['_trackPageview']];
+  <script>var _gaq = [['_setAccount',
+    '{{ site.google_analytics_id }}'],['_trackPageview']];
   (function (d, t) {
     var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
     g.src = ('https:' == location.protocol ? '//ssl' : '//www') +
