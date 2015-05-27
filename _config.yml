@@ -1,0 +1,66 @@
+# Site settings
+TZ: Europe/Kiev
+title: Vazha Omanashvili - Front-end Developer
+domain: rainum.me
+url: http://rainum.me
+repo: https://github.com/rainum/rainum.me
+
+# Global data
+author: Vazha Omanashvili
+email: rainum.ua@gmail.com
+description: >
+  Vazha Omanashvili is a Ukraine based Front-end Developer, who lives at
+  bleeding edge of technology and likes to develop clean and friendly user
+  interfaces.
+
+about_me: |
+  Hello, I'm Vazha Omanashvili, a developer from Ukraine.
+
+  I work at [Mashape](http://mashape.com/), an API marketplace for the
+  consumption, collaboration, monetization and distribution of both private and
+  public APIs. I meddle with everything UI/UX, Node.js, Analytics and a little
+  bit of everything else. Also I do contributions to various open-source
+  projects of the company.
+
+  I love to build things which are useful for people. I'm fascinated by rock
+  music, blacksmithing, bleeding edge of technology, and interesting books.
+
+  [Download my CV](https://docs.google.com/document/d/1nyLWRhJCddXQa2e_5fdzAxZH
+  Ir2CvV2bpnX1e2ZKzD8/export?format=pdf)
+
+twitter_username: vazhaom
+github_username: rainum
+linkedin_profile: https://www.linkedin.com/in/vazha
+meta:
+  - name: author
+    content: Vazha Omanashvili
+
+  - name: copyright
+    content: Vazha Omanashvili
+
+# Collections
+collections:
+ - projects
+
+# Build settings
+minify_html: true
+markdown: kramdown
+exclude:
+ - README.md
+ - .gitignore
+ - autoprefixer.yml
+ - Gemfile
+ - Gemfile.lock
+
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+  sources:
+    - _assets
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+
+gems:
+  - octopress-minify-html

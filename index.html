@@ -1,0 +1,133 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% for meta in site.meta %}
+  <meta name="{{ meta.name }}" content="{{ meta.content }}">
+  {% endfor %}
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet"
+        href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,400">
+  {% stylesheet styles %}
+  <link rel="canonical" href="{{ site.url }}">
+  <script>var _gaq = [['_setAccount', 'UA-7589447-3'], ['_trackPageview']];
+  (function (d, t) {
+    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    g.src = ('https:' == location.protocol ? '//ssl' : '//www') +
+        '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s)
+  }(document, 'script'));</script>
+</head>
+<body>
+<div class="container">
+  <header class="site-header" role="banner">
+    <a href="/" class="brand">
+      <span class="ico-rainum"></span>
+
+      <h1>Vazha Omanashvili</h1>
+
+      <h2>Front-end Developer</h2>
+    </a>
+    <nav role="navigation" class="main-nav">
+      <ul>
+        <li><a href="#about" class="scroll-to">About</a></li>
+        <li><a href="#projects" class="scroll-to">Projects</a></li>
+        <li><a href="#contact" class="scroll-to">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content" role="main">
+    <section id="about" class="section about-section">
+      <header class="section-header">
+        <hr>
+        <h2>
+          I develop <strong><span class="ico-desktop"></span>&nbsp;web</strong>
+          and <strong><span class="ico-mobile"></span>&nbsp;mobile</strong>
+          products for humans </h2>
+        <hr>
+      </header>
+
+      <article>
+        <div class="row-fluid">
+          <div class="span9">
+            {{ site.about_me | markdownify }}
+          </div>
+          <div class="span3">
+            <figure>
+              {% image vazha.jpg alt="Vazha Omanashvili" %}
+            </figure>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <header class="section-header">
+        <hr>
+        <h2>Projects</h2>
+        <hr>
+      </header>
+
+      {% for project in site.projects %}
+      <article>
+        <div class="row-fluid">
+          <div class="span9">
+            {% for screenshot in project.screenshots %}
+            <figure>{{ screenshot | image }}</figure>
+            {% endfor %}
+          </div>
+          <div class="span3">
+            <dl>
+              <dt>Project</dt>
+              <dd><h3>{{ project.name }}</h3></dd>
+              <dt>Description</dt>
+              <dd>{{ project.description }}</dd>
+              <dt>Responsible for</dt>
+              <dd>{{ project.responsible_for }}</dd>
+              <dt>Links</dt>
+              <dd><a href="{{ project.link }}" target="_blank">Website</a></dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <a href="#" class="back-to-top scroll-to" title="Back to top">&uarr;</a>
+  </div>
+
+  <footer class="site-footer" id="contact" role="contentinfo">
+    <hr>
+    <div class="email-link">
+      <a href="mailto:{{ site.email }}" target="_blank" title="Drop me a line"
+         class="ico-envelope"></a>
+      <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"
+         title="Follow me on Twitter" class="ico-twitter"></a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank"
+         title="My GitHub account" class="ico-github"></a>
+      <a href="{{ site.linkedin_profile }}" target="_blank"
+         title="My LinkedIn profile" class="ico-linkedin"></a>
+    </div>
+    <p>
+      &copy;
+      <time datetime="{{ site.time | date: '%Y' }}">
+        {{ site.time | date: '%Y' }}
+      </time>
+      Vazha Omanashvili
+    </p>
+  </footer>
+</div>
+
+{% javascript app %}
+</body>
+</html>

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'rainum-icons';
+  src: url(asset_path('fonts/rainum-icons.eot'));
+  src: url(asset_path('fonts/rainum-icons.eot?#iefix')) format('embedded-opentype'),
+  url(asset_path('fonts/rainum-icons.woff')) format('woff'),
+  url(asset_path('fonts/rainum-icons.ttf')) format('truetype'),
+  url(asset_path('fonts/rainum-icons.svg#rainum-icons')) format('svg');
+}
+
+%ico,
+[class^="ico-"],
+[class*=" ico-"] {
+  font-family: 'rainum-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-rainum:before {
+  content: "\e600";
+}
+
+.ico-plane:before {
+  content: "\e01e";
+}
+
+.ico-download:before {
+  content: "\e601";
+}
+
+.ico-envelope:before {
+  content: "\f028";
+}
+
+.ico-mobile:before {
+  content: "\f10b";
+}
+
+.ico-desktop:before {
+  content: "\f108";
+}
+
+.ico-github:before {
+  content: "\f113";
+}
+
+.ico-linkedin:before {
+  content: "\f0e1";
+}
+
+.ico-twitter:before {
+  content: "\e49d";
+}
