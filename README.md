@@ -1,5 +1,5 @@
-# rainum.me
-Jekyll source for my personal website. http://rainum.me
+# vazha.me
+Jekyll source for my personal website. http://vazha.me
 
 ## Deploy
 

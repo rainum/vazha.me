@@ -1,9 +1,9 @@
 # Site settings
 TZ: Europe/Kiev
 title: Vazha Omanashvili - Front-end Developer
-domain: rainum.me
-url: http://rainum.me
-repo: https://github.com/rainum/rainum.me
+domain: vazha.me
+url: http://vazha.me
+repo: https://github.com/rainum/vazha.me
 
 # Global data
 author: Vazha Omanashvili
