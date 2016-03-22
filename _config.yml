@@ -16,14 +16,13 @@ description: >
 about_me: |
   Hello, I'm Vazha Omanashvili, a developer from Ukraine.
 
-  I work at [Mashape](http://mashape.com/), an API marketplace for the
-  consumption, collaboration, monetization and distribution of both private and
-  public APIs. I meddle with everything UI/UX, Node.js, Analytics and a little
-  bit of everything else. Also I do contributions to various open-source
-  projects of the company.
+  I work at [StopLight](http://stoplight.io/). We are providing engineering
+  teams with the best way to document, test, and build web APIs. I meddle with
+  everything UI/UX, Meteor, MongoDB, React, Electron. Also I do contributions
+  to various open-source projects of the company.
 
   I love to build things which are useful for people. I'm fascinated by rock
-  music, blacksmithing, bleeding edge of technology, and interesting books.
+  music, metal working, bleeding edge of technology, and interesting books.
 
   [Download my CV](https://drive.google.com/uc?export=download&id=0B-YBgjOTa-EnZ1BxNWppZ0luOWM)
 
@@ -53,14 +52,15 @@ exclude:
  - Gemfile.lock
 
 assets:
-  js_compressor:  uglifier
-  css_compressor: sass
+  compress:
+    css: true
+    js: true
   sources:
-    - _assets
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
 
 gems:
+  - jekyll-assets
   - octopress-minify-html
