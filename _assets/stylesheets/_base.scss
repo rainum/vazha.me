@@ -34,7 +34,7 @@ hr {
   height: 1px;
   border: none;
   background-color: #dee0e1;
-  background-image: linear-gradient(left, #f3f4f5 0%, #dee0e1 20%, #dee0e1 80%, #f3f4f5 100%);
+  background-image: linear-gradient(to right, #f3f4f5 0%, #dee0e1 20%, #dee0e1 80%, #f3f4f5 100%);
 
   &:before {
     content: "";
@@ -44,7 +44,7 @@ hr {
     width: 100%;
     height: 1px;
     background-color: #fafcfc;
-    background-image: linear-gradient(left, #f3f4f5 0%, #fff 20%, #fff 80%, #f3f4f5 100%);
+    background-image: linear-gradient(to right, #f3f4f5 0%, #fff 20%, #fff 80%, #f3f4f5 100%);
   }
 }
 

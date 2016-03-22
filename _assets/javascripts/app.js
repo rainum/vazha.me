@@ -1,5 +1,3 @@
-//= require jquery
-
 (function ($) {
   var $root = $('html, body');
   var $backTopBtn = $('.back-to-top');
