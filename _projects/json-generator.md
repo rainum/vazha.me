@@ -1,10 +1,9 @@
 ---
 name: JSON Generator
 description: >
-  My personal project. It provides an opportunity to generate mock JSON data
-  and access it via API.
+  My personal project. A random data generator. JSON Generator generates data according to a provided template. Data can be requested from server using REST API.
 responsible_for: Founder, Front End and Back End Development
-link: http://www.json-generator.com/
+link: http://json-generator.com/
 screenshots:
   - projects/json-generator.png
 ---
