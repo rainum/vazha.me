@@ -1,6 +1,6 @@
 # Site settings
 TZ: Europe/Kiev
-title: Vazha Omanashvili - Front-end Developer
+title: Vazha Omanashvili - Full Stack Developer
 domain: vazha.me
 url: http://vazha.me
 repo: https://github.com/rainum/vazha.me
@@ -9,20 +9,18 @@ repo: https://github.com/rainum/vazha.me
 author: Vazha Omanashvili
 email: rainum.ua@gmail.com
 description: >
-  Vazha Omanashvili is a Ukraine based Front-end Developer, who lives at
-  bleeding edge of technology and likes to develop clean and friendly user
-  interfaces.
+  Vazha Omanashvili is a Ukraine based Full Stack Developer who likes to develop an awesome stuff.
 
 about_me: |
-  Hello, I'm Vazha Omanashvili, a developer from Ukraine.
+  Hello, my name is Vazha Omanashvili. I'm a Full Stack Developer from Ukraine.
 
-  I work at [StopLight](http://stoplight.io/). We are providing engineering
+  Currently I'm working at [StopLight](https://stoplight.io/). We're providing engineering
   teams with the best way to document, test, and build web APIs. I meddle with
-  everything UI/UX, Meteor, MongoDB, React, Electron. Also I do contributions
-  to various open-source projects of the company.
+  everything related to APIs, NodeJS, GraphQL, Meteor, MongoDB, React, Electron. Sometimes 
+  I'm contributing into open-source projects.
 
-  I love to build things which are useful for people. I'm fascinated by rock
-  music, metal working, bleeding edge of technology, and interesting books.
+  I love to build things which are useful for people, especially developer tools. I'm 
+  fascinated by any engineering, rock music, bleeding edge of technology, and interesting books.
 
   [Download my CV](https://drive.google.com/uc?export=download&id=0B-YBgjOTa-EnZ1BxNWppZ0luOWM)
 
