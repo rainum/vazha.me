@@ -1,11 +1,10 @@
 ---
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +29,7 @@
 </head>
 <body>
 <div class="container">
-  <header class="site-header" role="banner">
+  <header class="site-header">
     <a href="/" class="brand">
       <span class="ico-rainum"></span>
 
@@ -38,7 +37,7 @@
 
       <h2>Full Stack Developer</h2>
     </a>
-    <nav role="navigation" class="main-nav">
+    <nav class="main-nav">
       <ul>
         <li><a href="#about" class="scroll-to">About</a></li>
         <li><a href="#projects" class="scroll-to">Projects</a></li>
@@ -65,7 +64,7 @@
           </div>
           <div class="span3">
             <figure>
-              {% image vazha.jpg alt="Vazha Omanashvili" %}
+              {% image vazha.jpg %}
             </figure>
           </div>
         </div>
@@ -107,7 +106,7 @@
     <a href="#" class="back-to-top scroll-to" title="Back to top">&uarr;</a>
   </div>
 
-  <footer class="site-footer" id="contact" role="contentinfo">
+  <footer class="site-footer" id="contact">
     <hr>
     <div class="email-link">
       <a href="mailto:{{ site.email }}" target="_blank" title="Drop me a line"
