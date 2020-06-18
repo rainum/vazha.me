@@ -31,9 +31,9 @@
 <div class="container">
   <header class="site-header">
     <a href="/" class="brand">
-      <span class="ico-rainum"></span>
+      {% image rainum_logo.svg class="logo" width="90" height="90" %}
 
-      <h1>Vazha Omanashvili</h1>
+      <h1>{{ site.author }}</h1>
 
       <h2>Full Stack Developer</h2>
     </a>
@@ -123,7 +123,7 @@
       <time datetime="{{ site.time | date: '%Y' }}">
         {{ site.time | date: '%Y' }}
       </time>
-      Vazha Omanashvili
+      {{ site.author }}
     </p>
   </footer>
 </div>
