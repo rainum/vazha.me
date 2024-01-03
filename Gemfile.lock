@@ -45,6 +45,7 @@ GEM
     ffi (1.16.3)
     forwardable-extended (2.6.0)
     google-protobuf (3.23.4-x86_64-darwin)
+    google-protobuf (3.23.4-x86_64-linux)
     html_press (0.8.2)
       htmlentities
       multi_css (>= 0.1.0)
@@ -97,7 +98,9 @@ GEM
       css_press
     multi_js (0.1.0)
       uglifier (~> 2)
-    nokogiri (1.13.10-x86_64-darwin)
+    nokogiri (1.16.0-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.0-x86_64-linux)
       racc (~> 1.4)
     octopress-hooks (2.6.2)
       jekyll (>= 2.0)
@@ -118,6 +121,8 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.58.3-x86_64-darwin)
       google-protobuf (~> 3.21)
+    sass-embedded (1.58.3-x86_64-linux-gnu)
+      google-protobuf (~> 3.21)
     sassc (2.4.0)
       ffi (~> 1.9)
     sprockets (4.2.1)
@@ -137,6 +142,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-23
+  x86_64-linux
 
 DEPENDENCIES
   autoprefixer-rails
