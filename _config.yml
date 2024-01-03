@@ -49,6 +49,7 @@ exclude:
 
 assets:
   compression: true
+  source_maps: false
   sources:
     - _assets/fonts
     - _assets/images
