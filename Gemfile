@@ -10,5 +10,3 @@ group :jekyll_plugins do
   gem 'jekyll-assets', git: 'https://github.com/envygeeks/jekyll-assets'
   gem 'octopress-minify-html'
 end
-
-gem 'jgd'

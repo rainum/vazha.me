@@ -83,7 +83,9 @@
         <div class="row-fluid">
           <div class="span9">
             {% for screenshot in project.screenshots %}
-            <figure>{{ screenshot | image }}</figure>
+            <figure>
+              {% asset '{{ screenshot | image }}' %}
+            </figure>
             {% endfor %}
           </div>
           <div class="span3">
@@ -111,8 +113,6 @@
     <div class="email-link">
       <a href="mailto:{{ site.email }}" target="_blank" title="Drop me a line"
          class="ico-envelope"></a>
-      <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"
-         title="Follow me on Twitter" class="ico-twitter"></a>
       <a href="https://github.com/{{ site.github_username }}" target="_blank"
          title="My GitHub account" class="ico-github"></a>
       <a href="{{ site.linkedin_profile }}" target="_blank"
@@ -140,7 +140,7 @@
 
   $('.scroll-to').on('click', (e) => {
     e.preventDefault();
-    const $el = $($(this).attr('href'));
+    const $el = $($(e.target).attr('href'));
     const elOffset = $el.length ? $el.offset().top : 0;
     const scrollTime = elOffset / 7;
 

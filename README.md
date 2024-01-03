@@ -12,11 +12,3 @@ Jekyll source of my personal website. http://vazha.me
 gem install bundler
 bundle install
 ```
-
-## Deploy
-
-To deploy site to gh-pages branch simply run this command under project's root:
-
-```bash
-jgd
-```
