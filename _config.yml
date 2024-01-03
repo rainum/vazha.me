@@ -48,13 +48,10 @@ exclude:
   - Gemfile.lock
 
 assets:
-  compress:
-    css: true
-    js: true
+  compression: true
   sources:
     - _assets/fonts
     - _assets/images
-    - _assets/javascripts
     - _assets/stylesheets
 
 plugins:
