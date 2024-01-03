@@ -1,0 +1,49 @@
+.site-footer {
+  @extend %clearfix;
+  color: $gray-light;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 50px 0 150px 0;
+  position: relative;
+
+  hr {
+    margin-bottom: 45px;
+  }
+
+  p {
+    margin: 60px 0 0;
+  }
+
+  .email-link {
+    background-color: $grey-lighter;
+    white-space: nowrap;
+    padding: 0 20px;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+
+    a {
+      font-size: 32px;
+      color: #f6f7f7;
+      text-decoration: none;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      display: inline-block;
+      margin: 0 10px;
+      background-color: #d0d0d0;
+      border-radius: 50% 50%;
+      text-shadow: 0 -1px #c5c5c5;
+      box-shadow: 0 1px #fff;
+      transition: background .2s ease-in-out;
+
+      &:hover {
+        background-color: $brand-color;
+      }
+    }
+  }
+}

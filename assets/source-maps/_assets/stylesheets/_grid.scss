@@ -1,0 +1,30 @@
+.row-fluid {
+  @extend %clearfix;
+  width: 100%;
+  position: relative;
+
+  > [class*="span"] {
+    float: left;
+    margin-left: 3.7719298%;
+  }
+
+  > [class*="span"]:first-child {
+    margin-left: 0;
+  }
+
+  .span4 {
+    width: 30.789474%;
+  }
+
+  .span9 {
+    width: 74.035088%;
+  }
+
+  .span8 {
+    width: 65.350877%;
+  }
+
+  .span3 {
+    width: 22.192982%;
+  }
+}
