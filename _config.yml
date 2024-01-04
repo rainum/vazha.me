@@ -36,24 +36,18 @@ meta:
 collections:
   - projects
 
-# Build settings
-minify_html: true
 markdown: kramdown
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+  sourcemap: development
+  load_paths:
+    - assets/stylesheets
+
 exclude:
-  - README.md
+  - .github/
   - .gitignore
-  - autoprefixer.yml
+  - README.md
   - Gemfile
   - Gemfile.lock
-
-assets:
-  compression: true
-  source_maps: false
-  sources:
-    - _assets/fonts
-    - _assets/images
-    - _assets/stylesheets
-
-plugins:
-  - jekyll-assets
-  - octopress-minify-html
+  - docker-compose.yml

@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet"
         href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400">
-  {% asset styles.css %}
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/styles.css' | relative_url }}?{{ site.time | date: '%s%N' }}" />
   <link rel="canonical" href="{{ site.url }}">
   <script>var _gaq = [['_setAccount',
     '{{ site.google_analytics_id }}'],['_trackPageview']];
@@ -31,7 +31,7 @@
 <div class="container">
   <header class="site-header">
     <a href="/" class="brand">
-      {% asset rainum_logo.svg class="logo" width="90" height="90" %}
+      <img src="/assets/images/rainum_logo.svg" alt="Branding" class="logo" width="90" height="90" />
 
       <h1>{{ site.author }}</h1>
 
@@ -64,7 +64,7 @@
           </div>
           <div class="span3">
             <figure>
-              {% asset vazha.jpg %}
+              <img src="/assets/images/vazha.jpg" alt="Vazha" />
             </figure>
           </div>
         </div>
@@ -84,7 +84,7 @@
           <div class="span9">
             {% for screenshot in project.screenshots %}
             <figure>
-              {% asset '{{ screenshot | image }}' %}
+              <img src="/assets/images/{{ screenshot }}" alt="{{ project.name }}" />
             </figure>
             {% endfor %}
           </div>
@@ -128,20 +128,18 @@
   </footer>
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 (function ($) {
   const $root = $('html, body');
   const $backTopBtn = $('.back-to-top');
 
-  $(window).on('scroll', () => {
-    $backTopBtn.toggle($(this).scrollTop() > 400);
-  });
+  $(window).on('scroll', () => $backTopBtn.toggle($(window).scrollTop() > 400));
 
   $('.scroll-to').on('click', (e) => {
     e.preventDefault();
-    const $el = $($(e.target).attr('href'));
-    const elOffset = $el.length ? $el.offset().top : 0;
+    const elId = $(e.target).attr('href');
+    const elOffset = elId === '#' ? 0 : $(elId).offset().top;
     const scrollTime = elOffset / 7;
 
     $root.animate({

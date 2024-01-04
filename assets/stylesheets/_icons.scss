@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rainum-icons';
-  src: url(asset_path('rainum-icons.eot'));
-  src: url(asset_path('rainum-icons.eot?#iefix')) format('embedded-opentype'),
-       url(asset_path('rainum-icons.woff')) format('woff'),
-       url(asset_path('rainum-icons.ttf')) format('truetype'),
-       url(asset_path('rainum-icons.svg#rainum-icons')) format('svg');
+  src: url('/assets/fonts/rainum-icons.eot');
+  src: url('/assets/fonts/rainum-icons.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/rainum-icons.woff') format('woff'),
+       url('/assets/fonts/rainum-icons.ttf') format('truetype'),
+       url('/assets/fonts/rainum-icons.svg#rainum-icons') format('svg');
 }
 
 %ico,
